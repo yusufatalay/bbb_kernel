@@ -11,3 +11,5 @@ sudo apt update && sudo apt upgrade -y
 sudo apt install linux-headers-$(uname -r)
 sudo apt-get install build-essential
 ```
+
+also run setup.sh to set the pins of the beaglebone.
