@@ -1,0 +1,1 @@
+cmd_/home/debian/Programming/bbb_kernel/dev_number/Module.symvers := sed 's/ko$$/o/' /home/debian/Programming/bbb_kernel/dev_number/modules.order | scripts/mod/modpost -m    -o /home/debian/Programming/bbb_kernel/dev_number/Module.symvers -e -i Module.symvers   -T -

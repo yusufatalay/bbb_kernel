@@ -1,0 +1,1 @@
+cmd_/home/debian/Programming/bbb_kernel/dev_number/dev_number.ko := ld -r -EL -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/debian/Programming/bbb_kernel/dev_number/dev_number.ko /home/debian/Programming/bbb_kernel/dev_number/dev_number.o /home/debian/Programming/bbb_kernel/dev_number/dev_number.mod.o;  true

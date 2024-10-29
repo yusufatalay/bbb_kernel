@@ -1,0 +1,1 @@
+cmd_/home/debian/Programming/bbb_kernel/dev_number/dev_number.mod := { echo  /home/debian/Programming/bbb_kernel/dev_number/dev_number.o;  echo; } > /home/debian/Programming/bbb_kernel/dev_number/dev_number.mod
