@@ -1,1 +1,0 @@
-cmd_/home/debian/Programming/bbb_kernel/dev_number/modules.order := {   echo /home/debian/Programming/bbb_kernel/dev_number/dev_number.ko; :; } | awk '!x[$$0]++' - > /home/debian/Programming/bbb_kernel/dev_number/modules.order
