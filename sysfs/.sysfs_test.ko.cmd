@@ -1,1 +1,0 @@
-cmd_/home/debian/Programming/bbb_kernel/sysfs/sysfs_test.ko := ld -r -EL -z noexecstack --build-id=sha1  -T scripts/module.lds -o /home/debian/Programming/bbb_kernel/sysfs/sysfs_test.ko /home/debian/Programming/bbb_kernel/sysfs/sysfs_test.o /home/debian/Programming/bbb_kernel/sysfs/sysfs_test.mod.o;  true

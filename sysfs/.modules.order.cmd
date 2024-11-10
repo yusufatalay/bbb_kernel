@@ -1,1 +1,0 @@
-cmd_/home/debian/Programming/bbb_kernel/sysfs/modules.order := {   echo /home/debian/Programming/bbb_kernel/sysfs/sysfs_test.ko; :; } | awk '!x[$$0]++' - > /home/debian/Programming/bbb_kernel/sysfs/modules.order
