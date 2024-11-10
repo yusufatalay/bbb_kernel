@@ -1,0 +1,1 @@
+cmd_/home/debian/Programming/bbb_kernel/procfs/procfs_test.mod := { echo  /home/debian/Programming/bbb_kernel/procfs/procfs_test.o;  echo; } > /home/debian/Programming/bbb_kernel/procfs/procfs_test.mod
