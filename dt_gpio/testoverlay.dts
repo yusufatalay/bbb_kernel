@@ -1,0 +1,32 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "ti,am335x-bone-black", "ti,am335x-bone", "ti,am33xx";
+
+	fragment@0 {
+		target = <&am33xx_pinmux>;
+
+		__overlay__ {
+			pinmux_p8_14: pinmux_p8_14 {
+				pinctrl-single,pins = <
+					0x028 0x07	/* P8_14 OUTPUT */
+				>;
+			};
+		};
+	};
+
+	fragment@1 {
+		target-path = "/";
+		__overlay__ {
+			my_device {
+				compatible = "brightlight,mydev";
+				status = "okay";
+				label = "Test";
+				my_value = <14>;
+				orange-led-gpio = <&gpio0 26 0>;	/* GPIO for P8_14 */
+			};
+		};
+	};
+};
+
