@@ -1,0 +1,38 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+	compatible = "ti,am335x-bone-black", "ti,am335x-bone", "ti,am33xx";
+
+	fragment@0 {
+		target = <&am33xx_pinmux>;
+		__overlay__ {
+			bb_i2c2_pins: pinmux_bb_i2c2_pins {
+				pinctrl-single,pins = <
+					0x178 0x73	/* i2c2_sda, SLEWCTRL_SLOW | INPUT_PULLUP | MODE3 */
+					0x17C 0x73	/* i2c2_scl, SLEWCTRL_SLOW | INPUT_PULLUP | MODE3 */
+				>;
+			};
+		};
+	};
+
+
+	fragment@1 {
+		target = <&i2c2>;
+		__overlay__ {
+			status = "okay";
+			pinctrl-names = "default";
+			pinctrl-0 = <&bb_i2c2_pins>;
+
+			#address-cells = <1>;
+			#size-cells = <0>;
+
+
+			my_bme: my_bme@76{
+				compatible = "brightlight,mybme";
+				reg = <0x76>;
+				status = "okay";
+			};
+		};
+	};
+};
