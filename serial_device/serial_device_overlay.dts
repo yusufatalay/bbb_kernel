@@ -1,0 +1,15 @@
+/dts-v1/;
+/plugin/;
+/ {
+	compatible = "ti, beaglebone-black";
+	fragment@0 {
+		target = <&uart1>;
+		__overlay__ {
+			echodev {
+				compatible = "brightlight,echodev";
+				status = "okay";
+			};
+		};
+	};
+};
+
